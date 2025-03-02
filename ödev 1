@@ -1,0 +1,81 @@
+2-Geleneksel Dosyalama Sistemleri, genellikle küçük ölçekli uygulamalar ve basit veri depolama ihtiyaçları için uygundur.
+
+Veritabanı Yönetim Sistemleri ise daha büyük, daha karmaşık veri yapıları ve daha fazla işlem gerektiren durumlar için uygundur.
+Veritabanları, veri bütünlüğü, güvenliği, performansı ve ölçeklenebilirlik gibi önemli avantajlar sağlar.
+
+Her iki sistem de veri yönetimi sağlar, ancak veritabanı yönetim sistemleri, gelişmiş özellikleri ve büyük veri setlerini daha verimli işleme kapasitesi ile daha güçlüdür.
+
+
+
+
+3-Veritabanı yönetim sistemleri, geleneksel dosyalama sistemlerine göre çok daha gelişmiş özellikler sunar.
+Veri bütünlüğü, güvenliği, performansı, çok kullanıcılı erişim gibi birçok alanda veritabanları, dosyalama sistemlerine kıyasla daha güçlü ve esnektir.
+Bu nedenle, büyük, karmaşık ve dinamik veri setlerini yönetmek için veritabanı yönetim sistemleri tercih edilir.
+
+
+
+
+4-Veritabanları, veri yönetimini kolaylaştırarak, işletmelerin ve kuruluşların veriye daha hızlı ve güvenli bir şekilde erişmesini sağlar.
+Veritabanlarının kullanıldığı alanlar, işletme yönetimi, sağlık hizmetleri, eğitim, finans, e-ticaret gibi geniş bir yelpazeye yayılmaktadır.
+Veritabanları, her türlü veri organizasyonu ve analizi için önemli bir araçtır ve günlük yaşamda hemen hemen her sektörde kritik bir rol oynamaktadır.
+
+
+
+
+örneğn Hava yolları, uçuş bilgilerini, rezervasyonları, müşteri bilgilerini ve bilet satışlarını yönetmek için veritabanları kullanır.
+Örnek: Uçak bileti rezervasyon sistemleri, kullanıcıların rezervasyon bilgilerini ve uçuş tarihlerini yönetmek için veritabanları kullanır.
+
+
+
+5-Tablo: Veritabanındaki verilerin düzenli bir biçimde saklandığı ana yapıdır.
+Satır: Tablo içinde yer alan her bir veri kaydını temsil eder.
+Sütun: Tablo içinde veri türlerini ve her kaydın özelliklerini temsil eder.
+Bu yapılar, verilerin düzenli, erişilebilir ve yönetilebilir bir şekilde saklanmasını sağlar.
+6-Birincil Anahtar, bir tablodaki her satırı benzersiz olarak tanımlar ve NULL olamaz.
+Yabancı Anahtar, bir tablonun sütununun başka bir tablonun birincil anahtarına (veya benzersiz bir sütuna) işaret etmesini sağlar ve NULL değeri alabilir. Yabancı anahtarlar, tablodaki verilerin birbiriyle ilişkili olmasını sağlar.
+
+
+
+7-Veritabanı Yöneticisi (DBA) – Tam kontrol ve yönetim yetkisi.
+Veritabanı Kullanıcıları – Veri ekleme, güncelleme ve silme işlemleri yapabilen kullanıcılar.
+Veritabanı Tasarımcısı – Veritabanı yapısını ve şemalarını tasarlayan kişiler.
+Uygulama Kullanıcıları – Veritabanına bağlı uygulamalar aracılığıyla veri işlemleri yapan otomatik kullanıcılar.
+Veritabanı Okuyucusu – Yalnızca veri sorgulama yetkisi olan kullanıcılar.
+Veritabanı Geliştiricisi – Veritabanı uygulamaları geliştiren ve sorgu yazan kişiler.
+Yönetici Yardımcıları (Superuser) – Geniş yönetim yetkilerine sahip kişiler.
+8-+-----------------------------------+
+|           Kullanıcı Türü          |
++-----------------------------------+-----------------------------------------+
+|         Veritabanı Yöneticisi     | Satış Temsilcisi | Müşteri | Ürün Yöneticisi | Okuyucu |
++-----------------------------------+-----------------------------------------+
+|                                   |                   |         |                 |         |
+| **Müşteriler Tablosu**            | SELECT, INSERT,    | SELECT  | SELECT          | SELECT  |
+|                                   | UPDATE, DELETE,    | INSERT  |                 |         |
+|                                   | ALTER, CREATE,     |         |                 |         |
+|                                   | DROP               |         |                 |         |
++-----------------------------------+-----------------------------------------+
+| **Siparişler Tablosu**            | SELECT, INSERT,    | SELECT  |                 | SELECT  |
+|                                   | UPDATE, DELETE,    |         |                 |         |
+|                                   | ALTER, CREATE,     |         |                 |         |
+|                                   | DROP               |         |                 |         |
++-----------------------------------+-----------------------------------------+
+| **Ürünler Tablosu**               | SELECT, INSERT,    |         | SELECT, INSERT, | SELECT  |
+|                                   | UPDATE, DELETE,    |         | UPDATE          |         |
+|                                   | ALTER, CREATE,     |         |                 |         |
+|                                   | DROP               |         |                 |         |
++-----------------------------------+-----------------------------------------+
+
+9- Veritabanı, verilerin düzenli bir şekilde depolandığı bir yapıdır. Veritabanı yalnızca veriyi içerir ve verilerin nasıl yönetileceğini, işleneceğini belirlemez.
+Veritabanı Yönetim Sistemi (VTSY), veritabanlarını oluşturmak, yönetmek ve kullanıcıların veriye erişimini sağlamak için kullanılan yazılımdır. VTSY, veritabanındaki verilere erişim, güvenlik, yedekleme ve veri bütünlüğü gibi işlemleri yönetir.
+Yani, bir veritabanı verilerin saklandığı yerdir, VTSY ise bu veritabanını yöneten ve işleten yazılım sistemidir. Veritabanı, veriyi depolarken, VTSY bu veriye erişim sağlar ve yönetir.
+
+
+10-İlişkisel veri modeli, verilerin tablolarda depolandığı, anahtarlar kullanılarak tablolarda ilişkiler kurulduğu ve SQL gibi dillerle veriye erişildiği bir yapıdır.
+Bu modelde veriler, satır ve sütunlardan oluşan tablolarda saklanır ve tablolar arasındaki ilişkiler, verilerin nasıl bir arada kullanılacağını belirler.
+İlişkisel veri modeli, veri bütünlüğünü sağlamada, veri organizasyonunda ve veri erişiminde oldukça güçlü bir yapıdır.
+
+
+
+
+11-Öğrenci Bilgi Sistemi için tasarlanan veritabanı, öğrencilerin bilgilerini, aldıkları dersleri, öğretmenleri ve derslerle ilgili notları organize etmek için etkili bir yapı sağlar.
+Tablolar arasındaki ilişkiler doğru şekilde kurularak, sistemin doğru çalışması sağlanır. Bu tür bir veritabanı tasarımı, okul ve üniversite yönetim sistemlerinde sıkça kullanılmaktadır.
