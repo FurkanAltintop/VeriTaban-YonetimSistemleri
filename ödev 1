@@ -1,3 +1,40 @@
+1- geleneksel dosyalama sistemlerinin çalışma şeklini açıklayarak bildiğiniz bir programlama dili yardımıyla txt dosyadan veri okumak ve veri yazmak için bir uygulama geliştiriniz.
+Cevap) Geleneksel dosyalama sistemlerinde veriler txt dosyalarına yazılır ve burdan okunur fakat bunun bazı dezavantajları vardır
+. veriye hızlı erişmek zordur
+.farklı dosyalarla bağlantı kurmak zordur
+.düzenleme işleri daha zahmetlidir
+Bu yüzden veritabanı sistemleri geliştirilmiştir. örneğ,n ;
+1. Öğrenciler tablosu
+Öğrenci ID       Ad        Soyadı      Doğum Tarihi
+10              furkan    Altıntop     2005-05-14
+11              ahmet     kaya         2003-01-24
+12              hami      mandıralı    2002-03-14
+.öğrenci ID: birincil anahtar-> her öğrenciye özel numara
+.Ad-Soyadı: öğrenci ismi
+.Doğum Tarihi: öğrencinin doğum tarihi
+2. Dersler tablosu
+Ders ID       Ders adı         Kredi
+500           matematik        5
+501           biyoloji         4
+502           kimya            3
+Ders ID: birincil anahtar
+Ders adı: dersin adı
+Kredi: Dersin kredi değeri
+3. Notlar tablosu
+Not ID        Öğrenci ID       Ders ID        Not
+1             10               500            90
+2             11               501            85
+3             12               502            95
+
+
+Öğrenci ID: Yabancı anahtar (öğrenciler tablosuna bağlı)
+Ders Id: Yabancı anahtar (dersler tablosuna bağlı)
+Not: öğrencinin aldığı not
+Sonuç olarak geleneksel dosyalama sisteminde txt dosyalarına satır satır yazılırdı.Ama veritabanı kullanarak 
+tablolar oluşturarak verileri düzenli saklamak daha kolaydır.
+
+
+
 2-Geleneksel Dosyalama Sistemleri, genellikle küçük ölçekli uygulamalar ve basit veri depolama ihtiyaçları için uygundur.
 
 Veritabanı Yönetim Sistemleri ise daha büyük, daha karmaşık veri yapıları ve daha fazla işlem gerektiren durumlar için uygundur.
